@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="hide-it.xsl" type="text/xsl"?>
+ 
+<!----------------------
+-->
+                   
+                   
+-->            
+-->            
+                   
+                   
+                   
+                   
+-->
+                   
+                       
+-->                    
+-->            
+                   
+                   
+               
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+-->
+                   
+                   
+                   
+               
+                   
+-->            
+                   
+                    .
+-->
+ 
+
+
+
+
+ 
+ 
+
+
+ <item>
+<title>[B][COLOR white]                     C O R T E S I A[/COLOR][COLOR deepskyblue]   B O Z[/COLOR][COLOR red]   L A T I N A[/COLOR][/B] </title>
+<link>http://ignora.me</link>
+<externallink>http://no link</externallink>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttps://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg
+</item>
+ <item>
+<title>[B][COLOR white]                   NO TE OLVIDES DE[/COLOR][COLOR deepskyblue]   SUBSCRIBER[/COLOR][COLOR white]  A MI CANAL[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>http://frepo.org/stalker.m3u</externallink>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttp://legionworldtv.com/master/movies/fanart.PNG
+</item>
+<item>
+<title>[B][COLOR white]                       http://[/COLOR][COLOR lime]https://www.youtube.com/user/LUISMMBOZ[/COLOR][COLOR white]kodi[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>http://frepo.org/stalker.m3u</externallink>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttps://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg
+</item>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttps://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg
+<info></info></item>
+ <item>
+<title>[B][COLOR dodgerblue]=============================================================================================[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>http://frepo.org/stalker.m3u</externallink>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttp://legionworldtv.com/master/movies/fanart.PNG
+</item>
+ <item>
+<title>[B][COLOR white]TODO EL [/COLOR][COLOR white]   MERITO DE[/COLOR][COLOR white]   ESTE ADDON[/COLOR][/B] </title>
+<link>http://ignora.me</link>
+<externallink>http://no link</externallink>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttps://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg
+</item>
+ <item>
+<title>[B][COLOR dodgerblue]=============================================================================================[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>http://frepo.org/stalker.m3u</externallink>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttp://legionworldtv.com/master/movies/fanart.PNG
+</item>
+<item>
+<title>[B][COLOR yellow]                           GRACIAS[/COLOR][COLOR white] DEVELOPER[/COLOR][COLOR dodgerblue] LUISBOZ[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>http://legionworldtv.com</externallink>
+http://adryanlist.org/adryan/img/fanart.jpg
+<info></info>
+</item>
+<item>
+<title>[B][COLOR white]DISKOKOSMICO-BOZ[/COLOR][/B]</title>
+<link>$doregex[makelist3]</link>
+<regex>
+  <name>makelist3</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR skyblue][makelist3.param2] - [makelist3.param3][/COLOR][/COLOR][/B]</title>
+        <link>$doregex[makelist2]</link>
+http://legionworldtv.com/master/movies/icon.PNGhttp://legionworldtv.com/master/movies/fanart.PNG
+        ]]></listrepeat>
+<expres>playlist:"(.*?)" name:"(.*?)" info:"(.*?)";</expres>
+<page>https://pastebin.com/raw/ckTk8v9T</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+        <title>[COLOR skyblue][makelist2.param2][/COLOR][/COLOR][/B]</title>
+        <link>$doregex[makelist]</link>
+		[makelist2.param3]
+        ]]></listrepeat>
+<expres>class="name" href="(.*?)">(.*?)<[\w\W\s]{0,190}src="(.*?)"</expres>
+<page>[makelist3.param1]</page>
+<cookieJar></cookieJar>
+</regex>
+
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title> [makelist.param3][/COLOR][/B]</title>
+        <link>$doregex[getUrl]</link>
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>http://diskokosmiko.mx[makelist2.param1]/list,1,20</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>http://diskokosmiko.mx/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>http://diskokosmiko.mx/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>http://diskokosmiko.mx/[makelist.param2]</page>
+<referer>http://diskokosmiko.mx[makelist2.param1]/list,1,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+http://legionworldtv.com/master/movies/icon.PNGhttp://legionworldtv.com/master/movies/fanart.PNG
+</item>
+<item>
+<title>[B][COLOR white]SERIES BOZ[/COLOR][/B]</title>  
+<link>$doregex[makelist2]</link>
+<regex>
+  <name>makelist2</name>
+  <listrepeat><![CDATA[
+  <SetViewMode>55</SetViewMode>
+        <title>[makelist2.param1][/COLOR][/B]</title>
+<link>$doregex[makelist]</link>
+		[makelist2.param3]
+[makelist2.param3]
+]]></listrepeat>
+<expres>Name:"(.*?)" url:"(.*?)" img:"(.*?)"; server:"(.*?)"</expres>
+<page>https://pastebin.com/raw/VDAzKJAd</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+  <name>makelist</name>
+  <listrepeat><![CDATA[
+        <title>$pyFunction:('[makelist.param3]').replace('Espa&#241;ol','')[/COLOR][/B]</title>
+        <link>$doregex[getUrl]</link>
+				[makelist2.param3]
+	[makelist2.param3]
+        ]]></listrepeat>
+<expres><![CDATA[href="\/.*,(.*?),list.*\n.*\n.*\n.*href="\/([^"]*)".*?>(.*?)<]]></expres>
+<page>[makelist2.param2]/list,1,15</page>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>getUrl</name>
+<expres>DownloadUrl":"([^"]+)<expres>
+<page>[makelist2.param4]/action/DownloadFile?location=fi&amp;f=[makelist.param1]</page>
+<rawpost>fileId=[makelist.param1]&__RequestVerificationToken=$doregex[tok]</rawpost>
+<referer>[makelist2.param4]/[makelist.param2]</referer>
+<connection>keep-alive</connection>
+<accept>*/*</accept>
+<X-Req>XMLHttpRequest</X-Req>
+<cookieJar></cookieJar>
+</regex>
+<regex>
+<name>tok</name>
+<expres>DownloadFile.*RequestVerificationToken.*?value="([^"]+)<expres>
+<page>[makelist2.param4]/[makelist.param2]</page>
+<referer>[makelist2.param4]/freeworld/fileuploader-67183/list,4,15</referer>
+<connection>keep-alive</connection>
+<cookieJar></cookieJar>
+</regex>
+https://i.ytimg.com/vi/tvhgGXCU0Gw/maxresdefault.jpghttps://kfiretv-cn396iwnnfhyi.netdna-ssl.com/wp-content/uploads/2017/04/kodi-17.1-on-firestick-1024x436.jpg
+</item>
+<item>
+<title>[B][COLOR white]SERIES  BOZ 2[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>http://legionworldtv.com/master/movies/condor76.m3u</externallink>
+http://legionworldtv.com/master/movies/icon.PNGhttp://legionworldtv.com/master/movies/fanart.PNG
+<info></info>
+</item>
+<item>
+<title>[B][COLOR RED]ANIMADOS y SAGAS BOZ[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>https://pastebin.com/raw/XMwAL4Ms</externallink>
+http://legionworldtv.com/master/movies/icon.PNGhttp://legionworldtv.com/master/movies/fanart.PNG
+<info></info>
+</item>
+<item>
+<item>
+<title>[B][COLOR white]SPORTS-ON DEMAND[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>https://pastebin.com/raw/2FcxqG7i</externallink>
+http://legionworldtv.com/master/movies/icon.PNGhttp://legionworldtv.com/master/movies/fanart.PNG
+<info></info>
+</item>
+<item>
+<title>[B][COLOR white]TELENOVELAS[/COLOR][/B]</title>
+<link>http://ignora.me</link>
+<externallink>https://pastebin.com/raw/xQiy0MLB</externallink>
+http://legionworldtv.com/master/movies/icon.PNGhttp://legionworldtv.com/master/movies/fanart.PNG
+<info></info>
+</item>
+
+<channels>
+ <channel>
+      <name>[COLOR white][COLOR  lime]•  [/COLOR] PELICULAS[COLOR yellow] DISNEY[/COLOR] Y [COLOR blue]PIXAR [/COLOR]</name>
+  <thumbnail>https://dl.dropbox.com/s/04gopgyjwq5dvf1/fanart.jpg</thumbnail>
+<fanart>https://dl.dropbox.com/s/9t9uo087j0ft40x/peliculas%20disney.jpg</fanart>
+<link>http://http://diskokosmiko.mx</link>
+   <externallink>https://pastebin.com/raw/bbpPrXXX</externallink>
+</channel>
+  </channels>
+  
+  
